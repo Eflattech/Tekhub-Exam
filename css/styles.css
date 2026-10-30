@@ -433,24 +433,16 @@ h1 span {
 :focus-visible {
   outline: 3px solid #7555ce; outline-offset: 3px;
 }
-.signup-dialog {
-  width: min(420px, calc(100% - 32px)); padding: 0; border: 0; border-radius: 14px;
+.signup-section {
+  max-width: 500px; margin: 24px auto; padding: 20px;
+  border-radius: 14px; background: #f7f3ff;
 }
-.signup-dialog::backdrop {
-  background: #10182fcc;
+.signup-section h2 {
+  margin: 0 0 8px; font-size: 25px;
 }
-.signup-card {
-  position: relative; padding: 28px;
-}
-.signup-card h2 {
-  margin: 0 0 8px; font-size: 26px;
-}
-.signup-card > p,
+.signup-section > p,
 .signup-status {
-  color: #667195; font-size: 14px; line-height: 1.5;
-}
-.signup-close {
-  position: absolute; top: 8px; right: 8px; width: 42px; height: 42px; border: 0; background: transparent; font-size: 25px; cursor: pointer;
+  color: #667195; font-size: 13px; line-height: 1.5;
 }
 .signup-form {
   display: grid; gap: 10px;
@@ -459,13 +451,10 @@ h1 span {
   font-size: 13px; font-weight: bold;
 }
 .signup-form input {
-  width: 100%; min-height: 44px; padding: 11px; border: 1px solid #aaa; border-radius: 6px;
+  width: 100%; min-height: 42px; padding: 11px; border: 1px solid #aaa; border-radius: 6px;
 }
 .signup-form input.is-invalid {
   border-color: #c62828;
-}
-.signup-form .button {
-  cursor: pointer;
 }
 .signup-status {
   min-height: 21px; margin: 0; font-size: 12px;

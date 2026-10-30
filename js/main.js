@@ -8,7 +8,6 @@
   const chatInput = document.querySelector("#chat-input");
   const chatPanel = document.querySelector(".chat-panel");
   const chatStatus = document.querySelector(".chat-status");
-  const signupDialog = document.querySelector(".signup-dialog");
   const signupForm = document.querySelector(".signup-form");
   const signupEmail = document.querySelector("#signup-email");
   const signupStatus = document.querySelector(".signup-status");
@@ -107,25 +106,6 @@
     message.textContent = text;
     chatPanel.insertBefore(message, chatForm);
   }
-
-  document.querySelectorAll(".signup-open").forEach(function (button) {
-    button.addEventListener("click", function () {
-      signupForm.reset();
-      signupEmail.classList.remove("is-invalid");
-      signupStatus.className = "signup-status";
-      signupStatus.textContent = "This demo form does not save your email.";
-      signupDialog.showModal();
-      signupEmail.focus();
-    });
-  });
-
-  document.querySelector(".signup-close").addEventListener("click", function () {
-    signupDialog.close();
-  });
-
-  signupDialog.addEventListener("click", function (event) {
-    if (event.target === signupDialog) signupDialog.close();
-  });
 
   signupForm.addEventListener("submit", function (event) {
     event.preventDefault();

@@ -23,13 +23,13 @@
       <a href="#how-it-works">How it works</a>
       <a href="#privacy">Privacy</a>
     </nav>
-    <button class="button button-dark header-cta signup-open" type="button">Get early access <span>→</span></button>
+    <a class="button button-dark header-cta" href="#signup">Get early access <span>→</span></a>
   </header>
 
   <main>
     <section class="hero">
       <div class="hero-copy">
-        <p class="eyebrow">A new way to talk to AI</p>
+        <span class="eyebrow">A new way to talk to AI</span>
         <h1>AI that sees<br><span>the whole picture.</span></h1>
         <p class="hero-description">Talk naturally with Pinai using voice, video and visual context. Get real answers, clearer ideas and hands-on help in real time.</p>
         <a class="button button-orange" href="#how-it-works">See Pinai in action <span>→</span></a>
@@ -145,7 +145,7 @@
       <div class="section-heading">
         <h2>Designed around you.</h2>
         <p>More understanding. Less friction. A more helpful AI, built for real life.</p>
-      </div>h
+      </div>
       <div class="benefits">
         <article class="benefit">
           <span class="icon-box lavender"><img src="assets/icons/file-text.svg" alt=""></span>
@@ -208,22 +208,19 @@
     <footer class="footer" id="get-started">
       <div class="footer-title"><p>Be more curious</p><h2>Make your next question<br>a conversation.</h2></div>
       <p class="footer-copy">Whether you're learning, creating, fixing or just exploring, Pinai is here to see the bigger picture and help you move forward.</p>
-      <button class="button button-dark signup-open" type="button">Get early access <span>→</span></button>
+      <a class="button button-dark" href="#signup">Get early access <span>→</span></a>
     </footer>
-  </main>
 
-  <dialog class="signup-dialog">
-    <div class="signup-card">
-      <button class="signup-close" type="button" title="Close sign-up form">×</button>
-      <h2 id="signup-title">Get early access</h2>
+    <section class="signup-section" id="signup">
+      <h2>Get early access</h2>
       <p>Join the list and we'll be in touch when Pinai is ready.</p>
-      <form class="signup-form" novalidate>
+      <form class="signup-form">
         <label for="signup-email">Email address</label>
         <input id="signup-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
         <button class="button button-orange" type="submit">Join the list <span>→</span></button>
         <p class="signup-status">This demo form does not save your email.</p>
       </form>
-    </div>
-  </dialog>
+    </section>
+  </main>
 </body>
 </html>
